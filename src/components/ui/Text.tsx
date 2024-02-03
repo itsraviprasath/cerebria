@@ -32,7 +32,7 @@ interface TextProps extends React.HTMLAttributes<HTMLElement> {
     | "body3"
     | "body4";
   numberOfLines?: number;
-  color?: "text-primary";
+  color?: "text-primary" | "text-secondary" | "text-tertiary" | "tertiaryLight";
 }
 
 const textVariants = {
