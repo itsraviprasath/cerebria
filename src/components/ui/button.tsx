@@ -6,8 +6,8 @@ import * as React from "react";
  */
 const buttonVariants = {
   default:
-    "bg-[#9615DB] text-white hover:bg-transparent hover:text-[#9615DB] hover:border-[#9615DB]",
-  link: "text-[#9615DB] underline-offset-4 hover:underline border-none hover:bg-transparent hover:text-[#9615DB]",
+    "bg-primary text-white hover:bg-transparent hover:text-[#primary] hover:border-primary",
+  link: "text-primary underline-offset-4 hover:underline border-none hover:bg-transparent hover:text-primary",
 };
 
 /**

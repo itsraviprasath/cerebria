@@ -1,11 +1,11 @@
 import { Text } from "@/components/ui/Text";
 
-const Home = () => {
+const FAQs = () => {
   return (
     <div>
-      <Text variant="body1">Home</Text>
+      <Text variant="body1">FAQs</Text>
     </div>
   );
 };
 
-export default Home;
+export default FAQs;
