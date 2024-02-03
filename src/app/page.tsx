@@ -5,8 +5,8 @@ import { Input } from "@/components/ui/input";
 export default function Home() {
   return (
     <>
-      <Text variant="h1">Text</Text>
-      <Button variant="default" size="rounded">
+      <Text variant="body1">Text</Text>
+      <Button variant="default" border="lg" size="rounded">
         Button
       </Button>
       <Input label="wr" />

@@ -64,7 +64,7 @@ const Text: React.FC<TextProps> = ({
     <>
       <p
         className={`${textVariants[variant]} ${className && className} ${
-          color ? color : "text-primary-foreground"
+          color ? color : "text-white"
         }`}
         {...rest}
       >

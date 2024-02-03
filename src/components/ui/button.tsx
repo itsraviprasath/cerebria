@@ -5,15 +5,9 @@ import * as React from "react";
  * @enum {string}
  */
 const buttonVariants = {
-  default: "bg-primary text-primary-foreground",
-  destructive:
-    "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-  outline:
-    "text-[#0A0909] border border-input hover:bg-accent hover:text-accent-foreground",
-  secondary:
-    "text-[#0A0909] bg-secondary-50 text-secondary-foreground hover:bg-secondary/80",
-  ghost: "text-[#0A0909] hover:bg-accent hover:text-accent-foreground",
-  link: "text-[#0A0909] underline-offset-4 hover:underline text-primary border-none hover:bg-inherit",
+  default:
+    "bg-[#9615DB] text-white hover:bg-transparent hover:text-[#9615DB] hover:border-[#9615DB]",
+  link: "text-[#9615DB] underline-offset-4 hover:underline border-none hover:bg-transparent hover:text-[#9615DB]",
 };
 
 /**
