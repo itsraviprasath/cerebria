@@ -2,9 +2,9 @@ import { Text } from "@/components/ui/Text";
 
 const Home = () => {
   return (
-    <div>
+    <section className="my-10">
       <Text variant="body1">Home</Text>
-    </div>
+    </section>
   );
 };
 

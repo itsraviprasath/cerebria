@@ -6,8 +6,9 @@ import * as React from "react";
  */
 const buttonVariants = {
   default:
-    "bg-white text-primary hover:bg-black hover:text-[#primary] hover:border-primary",
-  link: "text-primary underline-offset-4 hover:underline border-none hover:bg-transparent hover:text-primary",
+    "bg-primary text-tertiary hover:bg-secondary hover:text-primary hover:border-primary",
+  ghost: "bg-white text-primary hover:bg-secondary hover:text-primary",
+  link: "text-primary underline-offset-4 hover:underline border-none hover:bg-secondary hover:text-primary",
 };
 
 /**
@@ -71,8 +72,8 @@ const Button = React.forwardRef<
     return (
       <>
         <button
-          className={`text-black relative overflow-hidden inline-flex items-center justify-center 
-        font-semibold text-base  transition-all hover:bg-white hover:text-black border hover:border-black 
+          className={`text-tertiary relative overflow-hidden inline-flex items-center justify-center 
+        font-semibold text-base  transition-all hover:bg-black hover:text-primary border hover:border-black 
         ${buttonVariants[variant]} ${borderVariants[border]} 
         ${sizeVariants[size]} ${block && "w-full"} ${className}`}
           ref={ref}
