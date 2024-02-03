@@ -3,7 +3,7 @@ import { Text } from "../ui/Text";
 const Footer = () => {
   return (
     <>
-      <section className="grid grid-cols-6">
+      <section className="grid grid-cols-6 my-10">
         <div className="col-span-3 mr-32">
           <Text className="mb-5" variant="h5">
             <span className="text-primary">Cerebria</span>&apos;24
@@ -46,9 +46,6 @@ const Footer = () => {
 
             <li className="my-2">
               <Text variant="body3">aimlevents@bitsathy.ac.in</Text>
-            </li>
-            <li className="my-2">
-              <Text variant="body3">+91 8870248269</Text>
             </li>
           </ul>
         </div>
