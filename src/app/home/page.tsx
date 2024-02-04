@@ -1,11 +1,20 @@
-import { Text } from "@/components/ui/Text";
+import Timer from "@/app/home/(sections)/timer";
+import Hero from "./(sections)/hero";
+import CTA from "@/components/design/cta";
+import Association from "./(sections)/association";
+import CashPrice from "./(sections)/cash-price";
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <section className="my-10">
-      <Text variant="body1">Home</Text>
-    </section>
+    <main className="mb-10">
+      <Hero />
+
+      <Timer />
+      <Association />
+      <CashPrice />
+      <CTA />
+    </main>
   );
 };
 
-export default Home;
+export default HomePage;

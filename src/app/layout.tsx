@@ -10,7 +10,7 @@ const inter = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Cerebria'24",
+  title: "Cerebria'24 - BITSathy",
   description: "DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} + bg-[#191919] px-20`}>
+      <body className={`${inter.className} + bg-[#191919] px-5 lg:px-20`}>
         <Navbar />
         {children}
         <Footer />

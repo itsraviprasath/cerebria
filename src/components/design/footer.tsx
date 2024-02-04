@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <section className="grid grid-cols-6 my-10">
-        <div className="col-span-3 mr-32">
+        <div className="col-span-3 max-xl:col-span-6 max-sm:col-span-6 lg:mr-32">
           <Text className="mb-5" variant="h5">
             <span className="text-primary">Cerebria</span>&apos;24
           </Text>
@@ -14,7 +14,7 @@ const Footer = () => {
             since the 1500s.
           </Text>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 max-xl:col-span-6 max-sm:col-span-6">
           <Text variant="sub1" color="text-primary">
             Social
           </Text>
@@ -30,7 +30,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 max-xl:col-span-6 max-sm:col-span-6">
           <Text variant="sub1" color="text-primary">
             Organiser
           </Text>
