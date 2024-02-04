@@ -21,7 +21,7 @@ const Hero = () => {
             <Text variant="body3">Bannari Amman Institute of Technology</Text>
           </div>
         </div>
-        <div>
+        <div className="my-20">
           <div className="mb-10">
             <Text color="text-primary" variant="h4">
               March

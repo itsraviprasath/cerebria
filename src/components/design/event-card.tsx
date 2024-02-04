@@ -26,7 +26,7 @@ const EventCard = (props: EventCardProps) => {
           border="round"
           block={true}
           size="lg"
-          className="mt-4 text-[#9615DB]"
+          className="mt-4 !text-[#9615DB]"
         >
           Register Now
         </Button>

@@ -9,7 +9,12 @@ const CTA = () => {
         For Any Queries Please Feel Free To Contact Us.
       </Text>
       <Link href="/contact-us">
-        <Button variant="default" size="default" border="round">
+        <Button
+          className="mt-7 lg:my-0"
+          variant="default"
+          size="default"
+          border="round"
+        >
           Contact Us
         </Button>
       </Link>

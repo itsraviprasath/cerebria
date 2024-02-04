@@ -6,6 +6,8 @@ import { Button } from "../ui/button";
 import { Text } from "../ui/Text";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import MenuOpen from "@/../public/icons/menu.svg";
+import MenuClose from "@/../public/icons/close.svg";
 // import Logo from "@/../public/logo.png";
 
 const Navbar = () => {
@@ -26,7 +28,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="lg:flex items-center justify-between w-full py-3">
-        <div className="flex justify-between">
+        <div className="flex justify-between my-5">
           <div>
             {/* <Image src={Logo} alt="Logo" width={60} height={30} /> */}
             <Text variant="h5">
@@ -37,9 +39,14 @@ const Navbar = () => {
           <div className="md:hidden mb-2 mr-4">
             <button onClick={handleClick}>
               {MobileNavbar ? (
-                <Image src={""} alt="Menu Open" width={35} height={35} />
+                <Image src={MenuOpen} alt="Menu Open" width={35} height={35} />
               ) : (
-                <Image src={""} alt="Menu Close" width={35} height={35} />
+                <Image
+                  src={MenuClose}
+                  alt="Menu Close"
+                  width={35}
+                  height={35}
+                />
               )}
             </button>
           </div>
@@ -49,7 +56,7 @@ const Navbar = () => {
             className={
               MobileNavbar
                 ? "hidden md:flex md:z-0 md:relative md:top-0 md:w-auto justify-center items-center"
-                : "bg-black p-5 rounded-3xl w-full"
+                : "bg-secondary p-5 rounded-3xl w-full fixed z-30 h-full"
             }
           >
             {navLinks.map((nav, index) => {
@@ -59,12 +66,11 @@ const Navbar = () => {
               }
               return (
                 <div key={index}>
-                  <Link href={nav.href}>
+                  <Link href={nav.href} onClick={handleClick}>
                     <Button
                       variant="link"
                       size="default"
-                      className={isActive ? "underline text-[#9615DB]" : ""}
-                      onClick={handleClick}
+                      className={isActive ? "underline !text-[#9615DB]" : ""}
                     >
                       {nav.name}
                     </Button>
