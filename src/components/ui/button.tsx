@@ -5,15 +5,10 @@ import * as React from "react";
  * @enum {string}
  */
 const buttonVariants = {
-  default: "bg-primary text-primary-foreground",
-  destructive:
-    "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-  outline:
-    "text-[#0A0909] border border-input hover:bg-accent hover:text-accent-foreground",
-  secondary:
-    "text-[#0A0909] bg-secondary-50 text-secondary-foreground hover:bg-secondary/80",
-  ghost: "text-[#0A0909] hover:bg-accent hover:text-accent-foreground",
-  link: "text-[#0A0909] underline-offset-4 hover:underline text-primary border-none hover:bg-inherit",
+  default:
+    "bg-primary text-tertiary hover:bg-secondary hover:text-primary hover:border-primary",
+  ghost: "bg-white text-primary hover:bg-secondary hover:text-primary",
+  link: "text-primary underline-offset-4 hover:underline border-none hover:bg-secondary hover:text-primary",
 };
 
 /**
@@ -77,8 +72,8 @@ const Button = React.forwardRef<
     return (
       <>
         <button
-          className={`text-black relative overflow-hidden inline-flex items-center justify-center 
-        font-semibold text-base  transition-all hover:bg-white hover:text-black border hover:border-black 
+          className={`text-tertiary relative overflow-hidden inline-flex items-center justify-center 
+        font-semibold text-base  transition-all hover:bg-black hover:text-primary border hover:border-black 
         ${buttonVariants[variant]} ${borderVariants[border]} 
         ${sizeVariants[size]} ${block && "w-full"} ${className}`}
           ref={ref}
