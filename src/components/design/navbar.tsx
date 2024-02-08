@@ -14,6 +14,7 @@ const Navbar = () => {
   const [MobileNavbar, setMobileNavbar] = useState(true);
 
   function handleClick() {
+    console.log("clicked");
     setMobileNavbar(!MobileNavbar);
   }
 
