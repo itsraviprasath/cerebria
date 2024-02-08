@@ -14,6 +14,7 @@ const Navbar = () => {
   const [MobileNavbar, setMobileNavbar] = useState(true);
 
   function handleClick() {
+    console.log("clicked");
     setMobileNavbar(!MobileNavbar);
   }
 
@@ -32,8 +33,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="lg:flex items-center justify-between w-full py-3">
-        <div className="flex justify-between my-5">
+      <nav className="sticky top-0 bg-secondary z-50 lg:flex items-center justify-between w-full py-1 lg:py-3">
+        <div className="flex justify-between items-center my-5">
           <div>
             <Text variant="h5">
               <Link href="/home">
@@ -42,7 +43,7 @@ const Navbar = () => {
             </Text>
           </div>
           {/* Mobile Navbar */}
-          <div className="md:hidden mb-2 mr-4">
+          <div className="md:hidden mr-4">
             <button onClick={handleClick}>
               {MobileNavbar ? (
                 <Image src={MenuOpen} alt="Menu Open" width={35} height={35} />
@@ -62,7 +63,7 @@ const Navbar = () => {
             className={
               MobileNavbar
                 ? "hidden md:flex md:z-0 md:relative md:top-0 md:w-auto justify-center items-center"
-                : "bg-secondary p-5 rounded-3xl w-full fixed z-30 h-full"
+                : "bg-secondary p-5 w-full fixed z-30 h-full"
             }
           >
             {navLinks.map((nav, index) => {
