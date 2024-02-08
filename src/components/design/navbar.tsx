@@ -15,6 +15,7 @@ const Navbar = () => {
   const [MobileNavbar, setMobileNavbar] = useState(true);
 
   function handleClick() {
+    console.log("clicked");
     setMobileNavbar(!MobileNavbar);
   }
 
@@ -66,7 +67,7 @@ const Navbar = () => {
               }
               return (
                 <div key={index}>
-                  <Link href={nav.href} onClick={handleClick}>
+                  <Link href={nav.href}>
                     <Button
                       variant="link"
                       size="default"
