@@ -3,6 +3,7 @@ import Hero from "./(sections)/hero";
 import CTA from "@/components/design/cta";
 import Association from "./(sections)/association";
 import CashPrice from "./(sections)/cash-price";
+import Pricing from "./(sections)/pricing";
 
 const HomePage = () => {
   return (
@@ -10,8 +11,9 @@ const HomePage = () => {
       <Hero />
 
       <Timer />
-      <Association />
+      {/* <Association /> */}
       <CashPrice />
+      <Pricing />
       <CTA />
     </main>
   );

@@ -1,5 +1,9 @@
 import EventCard from "@/components/design/event-card";
 import { Text } from "@/components/ui/Text";
+import paper from "@/../public/icons/paper.svg";
+import project from "@/../public/icons/project.svg";
+import hackathon from "@/../public/icons/hackathon.svg";
+import solve from "@/../public/icons/solve.svg";
 
 const Technical = () => {
   return (
@@ -13,27 +17,27 @@ const Technical = () => {
       <div className="lg:grid grid-cols-3 place-items-center">
         <EventCard
           eventName="Paper Emporium"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Individual/Team members can be allowed to present. Best Three Paper ideas will be awarded with cash prizes."
           key={0}
+          image={paper.src}
         />
         <EventCard
           eventName="Project Emporium"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Individual/Team members can be allowed to present. Best Three Project ideas will be awarded with cash prizes."
           key={1}
+          image={project.src}
         />
         <EventCard
           eventName="Mini-Hackathon"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Individual/Team of four members are allowed to participate. Teams will be awarded with cash prizes."
           key={2}
+          image={hackathon.src}
         />
         <EventCard
           eventName="TechMind Teasers"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Individual Participants will be allowed for this event. Best TechMind Participants will be awarded with cash prizes."
           key={3}
+          image={solve.src}
         />
       </div>
     </div>
