@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </section>
       <Text variant="body4" className="text-center my-5">
-        © Bannari Amman Institute of Technology. Developmed by{" "}
+        © Bannari Amman Institute of Technology. Developed by{" "}
         <Link
           className="text-primary hover:text-tertiary font-bold"
           href="https://www.linkedin.com/in/akash-e-847418218/"
