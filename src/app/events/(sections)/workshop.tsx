@@ -1,5 +1,6 @@
 import EventCard from "@/components/design/event-card";
 import { Text } from "@/components/ui/Text";
+import github from "@/../public/icons/github.svg";
 
 const Workshop = () => {
   return (
@@ -13,9 +14,9 @@ const Workshop = () => {
       <div className="lg:grid grid-cols-3 place-items-center">
         <EventCard
           eventName="The Future of Coding: GitHub Copilot Unleashed"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Workshop entitled on “The Future of Coding: GitHub Copilot Unleashed”"
           key={0}
+          image={github.src}
         />
       </div>
     </div>

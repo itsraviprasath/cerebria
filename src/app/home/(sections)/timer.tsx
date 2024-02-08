@@ -5,7 +5,7 @@ import { Button } from "../../../components/ui/button";
 import Link from "next/link";
 
 const Timer = () => {
-  const countDownDate = new Date("March 7, 2024 00:00:00").getTime();
+  const countDownDate = new Date("March 7, 2024 09:00:00").getTime();
 
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -34,7 +34,7 @@ const Timer = () => {
         </Text>
         <Text variant="body1">
           Join us at the forefront of technological advancements and gain
-          valuable insights at our upcoming technical symposium Kriya 2024 !
+          valuable insights at our upcoming technical symposium Cerebria 2024 !
         </Text>
         <Link href="https://forms.gle/T7LtKSLdBvUfUVuV7">
           <Button

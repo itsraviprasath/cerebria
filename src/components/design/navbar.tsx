@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import MenuOpen from "@/../public/icons/menu.svg";
 import MenuClose from "@/../public/icons/close.svg";
-// import Logo from "@/../public/logo.png";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -16,6 +15,12 @@ const Navbar = () => {
 
   function handleClick() {
     setMobileNavbar(!MobileNavbar);
+  }
+
+  function mobileLinkHandleClick() {
+    if (!MobileNavbar) {
+      setMobileNavbar(!MobileNavbar);
+    }
   }
 
   const navLinks = [
@@ -30,9 +35,10 @@ const Navbar = () => {
       <nav className="lg:flex items-center justify-between w-full py-3">
         <div className="flex justify-between my-5">
           <div>
-            {/* <Image src={Logo} alt="Logo" width={60} height={30} /> */}
             <Text variant="h5">
-              <span className="text-primary">Cerebria</span>&apos;24
+              <Link href="/home">
+                <span className="text-primary">Cerebria</span>&apos;24
+              </Link>
             </Text>
           </div>
           {/* Mobile Navbar */}
@@ -66,7 +72,7 @@ const Navbar = () => {
               }
               return (
                 <div key={index}>
-                  <Link href={nav.href} onClick={handleClick}>
+                  <Link href={nav.href} onClick={mobileLinkHandleClick}>
                     <Button
                       variant="link"
                       size="default"
@@ -80,6 +86,7 @@ const Navbar = () => {
             })}
             <Link className="ml-5" href="https://forms.gle/T7LtKSLdBvUfUVuV7">
               <Button
+                className="my-5 md:my-0"
                 variant="default"
                 size="default"
                 border="round"

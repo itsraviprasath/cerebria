@@ -10,7 +10,7 @@ const inter = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Cerebria'24 - BITSathy",
+  title: "Cerebria'24 - National Level Technical Symposium",
   description: "DEPARTMENT OF ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
 };
 

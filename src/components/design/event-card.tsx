@@ -1,18 +1,19 @@
 import Image from "next/image";
 import { Text } from "@/components/ui/Text";
 import { Button } from "@/components/ui/button";
-import img from "#/home/rectangle.png";
+import Link from "next/link";
 
 type EventCardProps = {
   eventName: string;
   description: string;
+  image?: any;
 };
 
 const EventCard = (props: EventCardProps) => {
   return (
     <div className="bg-primary w-80 m-auto p-4 rounded-3xl flex flex-col justify-center items-center mb-20">
       <div>
-        <Image src={img} alt={"image"} width={400} height={100} />
+        <Image src={props.image} alt={"image"} width={400} height={100} />
       </div>
       <div>
         <Text variant="h4" className="my-5 text-center">
@@ -21,15 +22,17 @@ const EventCard = (props: EventCardProps) => {
         <Text variant="body4" className="text-justify my-2">
           {props.description}
         </Text>
-        <Button
-          variant="ghost"
-          border="round"
-          block={true}
-          size="lg"
-          className="mt-4 !text-[#9615DB]"
-        >
-          Register Now
-        </Button>
+        <Link href="https://forms.gle/T7LtKSLdBvUfUVuV7">
+          <Button
+            variant="ghost"
+            border="round"
+            block={true}
+            size="lg"
+            className="mt-4 !text-[#9615DB]"
+          >
+            Register Now
+          </Button>
+        </Link>
       </div>
     </div>
   );

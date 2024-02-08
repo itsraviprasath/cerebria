@@ -1,5 +1,8 @@
 import EventCard from "@/components/design/event-card";
 import { Text } from "@/components/ui/Text";
+import connection from "@/../public/icons/connection.svg";
+import lens from "@/../public/icons/lens.svg";
+import broke from "@/../public/icons/broke.svg";
 
 const NonTechnical = () => {
   return (
@@ -13,21 +16,21 @@ const NonTechnical = () => {
       <div className="lg:grid grid-cols-3 place-items-center">
         <EventCard
           eventName="Connection"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Individual / Team will be allowed for this event."
           key={0}
+          image={connection.src}
         />
         <EventCard
           eventName="Lens into Life's Tapestry"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Individual  will be allowed for this event (Photography)."
           key={1}
+          image={lens.src}
         />
         <EventCard
           eventName="Breaking Boundaries"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the."
+          description="Individual will be allowed for this event (Poster Presentation)."
           key={2}
+          image={broke.src}
         />
       </div>
     </div>
