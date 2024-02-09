@@ -15,7 +15,7 @@ const CashPrice = () => {
         color="text-primary"
         className="text-7xl lg:text-9xl font-extrabold my-14"
       >
-        ₹49,999
+        ₹24,999
       </Text>
     </section>
   );

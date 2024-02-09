@@ -51,11 +51,9 @@ const FAQs = () => {
             4. What is the fee to participate in Cerebria?
           </Text>
           <Text variant="body2" className="my-5">
-            The general registration fee is Rs. 200 for BIT students and Rs. 250
-            for students from other colleges. No separate registration fee is
-            required to participate in each event. However, participants have to
-            pay separately to participate in workshops and technical paper
-            presentations.
+            The general registration fee is Rs. 350 for students from other
+            colleges for any two events which includes workshop also. If you are
+            willing to participate in workshop you can pay Rs.250 .
           </Text>
         </div>
         <div className="my-16">
@@ -63,8 +61,7 @@ const FAQs = () => {
             5. Do we have to pay separately for attending workshops?
           </Text>
           <Text variant="body2" className="my-5">
-            Yes, we have to pay separately for each workshop. The general
-            registration fee doesn&apos;t cover workshop participation.
+            No, for Rs.350 we can attend workshop + One non-technical event
           </Text>
         </div>
         <div className="my-16">

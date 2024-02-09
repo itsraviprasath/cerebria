@@ -10,9 +10,8 @@ const Footer = () => {
             <span className="text-primary">Cerebria</span>&apos;24
           </Text>
           <Text className="text-tertiaryLight" variant="body3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text ever
-            since the 1500s.
+            Cerebria is the largest technical symposium conducted by Bannari
+            Amman Institute of Technology.
           </Text>
         </div>
         <div className="col-span-1 max-xl:col-span-6 max-sm:col-span-6 my-5 lg:my-0">
@@ -21,18 +20,8 @@ const Footer = () => {
           </Text>
           <ul>
             <li className="my-2">
-              <Link href="https://www.instagram.com/">
+              <Link href="https://www.instagram.com/cerebria_24">
                 <Text variant="body3">Instagram</Text>
-              </Link>
-            </li>
-            <li className="my-2">
-              <Link href="https://www.linkedin.com/company/">
-                <Text variant="body3">Facebook</Text>
-              </Link>
-            </li>
-            <li className="my-2">
-              <Link href="https://twitter.com/">
-                <Text variant="body3">X</Text>
               </Link>
             </li>
           </ul>
