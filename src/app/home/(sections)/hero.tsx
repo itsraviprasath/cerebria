@@ -1,24 +1,29 @@
 import { Text } from "@/components/ui/Text";
 import BITLogo from "@/../public/images/home/bitlogo.png";
+import heroImage from "@/../public/images/home/hero-image.svg";
 import Image from "next/image";
 
 const Hero = () => {
   return (
     <>
-      <section className="lg:grid grid-cols-2 place-items-center h-screen">
-        <div className="flex items-center mt-10 space-x-5">
-          <Image
-            className="bg-white p-2 rounded-2xl"
-            src={BITLogo}
-            alt="BIT Logo"
-            width={80}
-            height={100}
-          />
-          <div>
-            <Text variant="body1">
-              Presented by <span className="text-primary font-bold">AIML</span>
-            </Text>
-            <Text variant="body3">Bannari Amman Institute of Technology</Text>
+      <section className="lg:grid grid-cols-2 place-items-center">
+        <div>
+          <Image className="w-full" src={heroImage} alt="Hero Image" />
+          <div className="flex items-center mt-10 space-x-5">
+            <Image
+              className="bg-white p-2 rounded-2xl"
+              src={BITLogo}
+              alt="BIT Logo"
+              width={80}
+              height={100}
+            />
+            <div>
+              <Text variant="body1">
+                Presented by{" "}
+                <span className="text-primary font-bold">AIML</span>
+              </Text>
+              <Text variant="body3">Bannari Amman Institute of Technology</Text>
+            </div>
           </div>
         </div>
         <div className="my-20">
@@ -45,7 +50,7 @@ const Hero = () => {
             </div>
             <div className="my-20">
               <Text className="text-5xl" variant="h1">
-                10+
+                6+
               </Text>
               <Text variant="body3">Paper Presentation</Text>
             </div>
