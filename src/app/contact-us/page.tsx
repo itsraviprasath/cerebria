@@ -2,7 +2,7 @@ import HeroSection from "@/components/design/hero-section";
 import PersonCard from "@/components/design/person-card";
 import Karthika from "@/../public/images/contact/KarthikaMam.jpg";
 import Shamanth from "@/../public/images/contact/Shamanth.png";
-import Dhanusri from "@/../public/images/contact/DHANUSRI.jpg";
+import Dhanusri from "@/../public/images/contact/Dhanusri.jpg";
 import Dhayanithi from "@/../public/images/contact/Dhayanithi.jpg";
 import Samyuktha from "@/../public/images/contact/Samyuktha.jpg";
 import { Text } from "@/components/ui/Text";
@@ -40,7 +40,7 @@ const ContactUs = () => {
           <PersonCard
             pic={Shamanth}
             name="Shamanth S"
-            phone="7904705803 "
+            phone="7904705803"
             key={0}
           />
           <PersonCard
