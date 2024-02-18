@@ -16,24 +16,28 @@ const Technical = () => {
       </Text>
       <div className="lg:grid grid-cols-3 place-items-center">
         <EventCard
+          link="https://forms.gle/DhqPcv1AhijXyMna6"
           eventName="Paper Emporium"
           description="Individual/Team members can be allowed to present. Best Three Paper ideas will be awarded with cash prizes."
           key={0}
           image={paper.src}
         />
         <EventCard
+          link="https://forms.gle/DhqPcv1AhijXyMna6"
           eventName="Project Emporium"
           description="Individual/Team members can be allowed to present. Best Three Project ideas will be awarded with cash prizes."
           key={1}
           image={project.src}
         />
         <EventCard
+          link="https://forms.gle/opKav9z5gBo9oZ1AA"
           eventName="Mini-Hackathon"
           description="Individual/Team of four members are allowed to participate. Teams will be awarded with cash prizes."
           key={2}
           image={hackathon.src}
         />
         <EventCard
+          link="https://forms.gle/DhqPcv1AhijXyMna6"
           eventName="TechMind Teasers"
           description="Individual Participants will be allowed for this event. Best TechMind Participants will be awarded with cash prizes."
           key={3}

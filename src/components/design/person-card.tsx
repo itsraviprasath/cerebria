@@ -1,8 +1,9 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Person from "@/../public/images/contact/person.jpg";
 import { Text } from "../ui/Text";
 
 type PersonCardProps = {
+  pic: StaticImageData;
   name: string;
   phone: string;
 };
@@ -14,7 +15,7 @@ const PersonCard = (props: PersonCardProps) => {
         <div className="rounded-full bg-primary p-2 w-fit m-auto">
           <Image
             className="rounded-full"
-            src={Person}
+            src={props.pic}
             alt=""
             width={150}
             height={100}

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 type EventCardProps = {
+  link:string;
   eventName: string;
   description: string;
   image?: any;
@@ -22,7 +23,7 @@ const EventCard = (props: EventCardProps) => {
         <Text variant="body4" className="text-justify my-2">
           {props.description}
         </Text>
-        <Link href="https://forms.gle/T7LtKSLdBvUfUVuV7">
+        <Link href={props.link}>
           <Button
             variant="ghost"
             border="round"

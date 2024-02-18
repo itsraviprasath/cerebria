@@ -1,5 +1,10 @@
 import HeroSection from "@/components/design/hero-section";
 import PersonCard from "@/components/design/person-card";
+import Karthika from "@/../public/images/contact/KarthikaMam.jpg";
+import Shamanth from "@/../public/images/contact/Shamanth.png";
+import Dhanusri from "@/../public/images/contact/DHANUSRI.jpg";
+import Dhayanithi from "@/../public/images/contact/Dhayanithi.jpg";
+import Samyuktha from "@/../public/images/contact/Samyuktha.jpg";
 import { Text } from "@/components/ui/Text";
 
 const ContactUs = () => {
@@ -15,7 +20,12 @@ const ContactUs = () => {
           Organinzing Secretary
         </Text>
         <div className="lg:grid grid-cols-1 place-items-center">
-          <PersonCard name="Prof. Karthika S" phone="8870248269" key={0} />
+          <PersonCard
+            pic={Karthika}
+            name="Prof. Karthika S"
+            phone="8870248269"
+            key={0}
+          />
         </div>
       </div>
       {/* Student Co - ordinators */}
@@ -27,10 +37,30 @@ const ContactUs = () => {
           Student Co-ordinators
         </Text>
         <div className="lg:grid grid-cols-4 place-items-center">
-          <PersonCard name="Shamanth S" phone="7904705803 " key={0} />
-          <PersonCard name="Dhanushri N" phone="9025447874" key={0} />
-          <PersonCard name="Dhayanithi A" phone="7904468863" key={0} />
-          <PersonCard name="Surya Raj S" phone="8072137522" key={0} />
+          <PersonCard
+            pic={Shamanth}
+            name="Shamanth S"
+            phone="7904705803 "
+            key={0}
+          />
+          <PersonCard
+            pic={Dhanusri}
+            name="Dhanushri N"
+            phone="9025447874"
+            key={0}
+          />
+          <PersonCard
+            pic={Dhayanithi}
+            name="Dhayanithi A"
+            phone="7904468863"
+            key={0}
+          />
+          <PersonCard
+            pic={Samyuktha}
+            name="Samyuktha S"
+            phone="9047732508"
+            key={0}
+          />
         </div>
       </div>
     </section>

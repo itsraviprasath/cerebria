@@ -13,6 +13,7 @@ const Workshop = () => {
       </Text>
       <div className="lg:grid grid-cols-3 place-items-center">
         <EventCard
+          link="https://forms.gle/pM6GtvQ955MuLPPN7"
           eventName="The Future of Coding: GitHub Copilot Unleashed"
           description="Workshop entitled on “The Future of Coding: GitHub Copilot Unleashed”"
           key={0}
