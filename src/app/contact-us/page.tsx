@@ -40,7 +40,7 @@ const ContactUs = () => {
           <PersonCard
             pic={Shamanth}
             name="Shamanth S"
-            phone="7904705803 "
+            phone="7904705803"
             key={0}
           />
           <PersonCard
